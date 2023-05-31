@@ -33,4 +33,11 @@ class ProductController
             "title" => "Product Name"
         ]);
     }
+
+    function kategories()
+    {
+        View::render('products/kategories', [
+            "title" => "Kategories Products"
+        ]);
+    }
 }
