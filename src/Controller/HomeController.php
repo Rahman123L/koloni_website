@@ -13,8 +13,14 @@ class HomeController
     }
 
     function contact() {
-        View::render('Home/contatc', [
+        View::render('Home/contact', [
             "title" => "Contact"
+        ]);
+    }
+
+    function information() {
+        View::render('Home/information', [
+            "title" => "Information"
         ]);
     }
 }

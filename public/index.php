@@ -10,13 +10,14 @@ use FebriRahman\Sambak\Controller\AdminController;
 // Home Router Page
 Router::add('GET', '/', HomeController::class, 'index', []);
 Router::add('GET', '/home/contact', HomeController::class, 'contact', []);
+Router::add('GET', '/home/information', HomeController::class, 'information', []);
 
 // Products Router Page
 Router::add('GET', '/products', ProductController::class, 'products', []);
 Router::add('GET', '/product/detail', ProductController::class, 'productDetail', []);
 Router::add('GET', '/product/checkout', ProductController::class, 'checkout', []);
 Router::add('GET', '/product/payment', ProductController::class, 'payment', []);
-Router::add('GET', '/product/kategori', ProductController::class, 'kategories', []);
+Router::add('GET', '/product/categories', ProductController::class, 'categories', []);
 
 // Users Router Page
 Router::add('GET', '/login', UsersController::class, 'login', []);

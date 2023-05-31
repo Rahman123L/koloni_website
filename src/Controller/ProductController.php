@@ -34,10 +34,10 @@ class ProductController
         ]);
     }
 
-    function kategories()
+    function categories()
     {
-        View::render('products/kategories', [
-            "title" => "Kategories Products"
+        View::render('products/categories', [
+            "title" => "Categories Products"
         ]);
     }
 }
