@@ -15,7 +15,7 @@
             </div>
             <div class="lg:w-1/4 m-auto flex md:block lg:block justify-center md:w-1/2 w-full px-4">
                 <nav class="list-none mb-10">
-                    <a><img src="images/image3.png" width="140px"></a>
+                    <a><img src="../images/image3.png" width="140px"></a>
                 </nav>
             </div>
             <div class="lg:w-1/4 md:w-1/2 w-full px-4">
@@ -23,7 +23,7 @@
             </div>
             <div class="lg:w-1/4 m-auto flex md:block lg:block justify-center md:w-1/2 w-full px-4">
                 <nav class="list-none mb-10 text-center">
-                    <a><img class="" src="images/logo-bpjs.png" width="200px"></a>
+                    <a><img class="" src="../images/logo-bpjs.png" width="200px"></a>
                     <li>
                         <a class="text-gray-400 hover:text-white mx-1">220000001291860</a>
                     </li>
