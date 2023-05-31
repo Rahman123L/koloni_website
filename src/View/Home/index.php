@@ -50,9 +50,7 @@
                 </button>
 
                 <!-- Dropdown menu -->
-                <div class="lg:hidden">
-                <div x-show="isOpen" 
-                    @click.away="isOpen = false"
+                <div x-show="!isOpen" 
                     x-transition:enter="transition ease-out duration-100"
                     x-transition:enter-start="opacity-0 scale-90"
                     x-transition:enter-end="opacity-100 scale-100"
@@ -61,7 +59,7 @@
                     x-transition:leave-end="opacity-0 scale-90"
                     class="absolute right-0 z-20 w-56 py-2 mt-2 overflow-hidden origin-top-right bg-white rounded-md shadow-xl dark:bg-gray-800">
 
-                    <a href="#" class="flex items-center p-3 text-sm text-gray-600 capitalize transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                    <a href="/products" class="flex items-center p-3 text-sm text-gray-600 capitalize transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
                         <span class="mx-1">
                             Baju
                         </span>
@@ -86,14 +84,11 @@
                     </a>
                 </div>
                 </div>
-                </div>
                 </a>
                 <a class="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0"
                    href="#">Information</a>
                 <a class="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0"
                    href="#">Contact</a>
-                <a class="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0"
-                   href="#">Help</a>
                 <a class="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0"
                    href="#">Gallery</a>
                 <div class="flex justify-center md:block">
@@ -158,7 +153,7 @@
         <div class="flex items-center justify-between px-4 py-2 bg-gray-900">
             <h1 class="text-lg font-bold text-white">Rp. 25.000</h1>
             <a href="#">
-            <button class="px-2 py-2 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-blue-500 rounded hover:bg-blue-600 focus:bg-gray-400 focus:outline-none">Add to cart</button>
+            <button class="px-2 py-2 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-blue-500 rounded hover:bg-blue-600 focus:bg-gray-400 focus:outline-none">Detail</button>
             </a>
         </div>
     </div>
@@ -176,7 +171,7 @@
         <div class="flex items-center justify-between px-4 py-2 bg-gray-900">
             <h1 class="text-lg font-bold text-white">Rp. 25.000</h1>
             <a href="#">
-            <button class="px-2 py-2 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-blue-500 rounded hover:bg-blue-600 focus:bg-gray-400 focus:outline-none">Add to cart</button>
+            <button class="px-2 py-2 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-blue-500 rounded hover:bg-blue-600 focus:bg-gray-400 focus:outline-none">Detail</button>
             </a>
         </div>
     </div>
@@ -194,7 +189,7 @@
         <div class="flex items-center justify-between px-4 py-2 bg-gray-900">
             <h1 class="text-lg font-bold text-white">Rp. 25.000</h1>
             <a href="#">
-            <button class="px-2 py-2 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-blue-500 rounded hover:bg-blue-600 focus:bg-gray-400 focus:outline-none">Add to cart</button>
+            <button class="px-2 py-2 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-blue-500 rounded hover:bg-blue-600 focus:bg-gray-400 focus:outline-none">Detail</button>
             </a>
         </div>
     </div>

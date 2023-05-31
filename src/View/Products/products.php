@@ -34,21 +34,60 @@
                 </button>
             </div>
         </div>
-
         <!-- Mobile Menu Open -->
         <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']"
              class="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white dark:bg-gray-800 md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center">
             <div class="flex flex-col md:flex-row md:mx-6">
                 <a class="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0"
                    href="/">Home</a>
-                <a class="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0"
-                   href="/products">Products</a>
+                   <div x-data="{ isOpen: true }" class="relative inline-block ">
+
+                <!-- Dropdown toggle button -->
+                <a>
+                <button @click="isOpen = !isOpen" class="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0">
+                    <span class="mx-1">Product</span>
+                </button>
+
+                <!-- Dropdown menu -->
+                <div x-show="!isOpen" 
+                    x-transition:enter="transition ease-out duration-100"
+                    x-transition:enter-start="opacity-0 scale-90"
+                    x-transition:enter-end="opacity-100 scale-100"
+                    x-transition:leave="transition ease-in duration-100"
+                    x-transition:leave-start="opacity-100 scale-100"
+                    x-transition:leave-end="opacity-0 scale-90"
+                    class="absolute right-0 z-20 w-56 py-2 mt-2 overflow-hidden origin-top-right bg-white rounded-md shadow-xl dark:bg-gray-800">
+
+                    <a href="/products" class="flex items-center p-3 text-sm text-gray-600 capitalize transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                        <span class="mx-1">
+                            Baju
+                        </span>
+                    </a>
+
+                    <a href="#" class="flex items-center p-3 text-sm text-gray-600 capitalize transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                        <span class="mx-1">
+                            Elektronik
+                        </span>
+                    </a>
+
+                    <a href="#" class="flex items-center p-3 text-sm text-gray-600 capitalize transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                        <span class="mx-1">
+                            Olahraga
+                        </span>
+                    </a>
+
+                    <a href="#" class="flex items-center p-3 text-sm text-gray-600 capitalize transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                        <span class="mx-1">
+                            Percetakan
+                        </span>
+                    </a>
+                </div>
+                </div>
+                </a>
                 <a class="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0"
                    href="#">Information</a>
                 <a class="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0"
                    href="#">Contact</a>
-                <a class="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0"
-                   href="#">Help</a>
                 <a class="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0"
                    href="#">Gallery</a>
                 <div class="flex justify-center md:block">
@@ -72,7 +111,7 @@
 <!-- Feature -->
 <div class="dark:bg-gray-800">
 <br>
-<p class="title-font sm:text-2xl text-2xl mb-4 font-medium text-white text-center">Products</p>
+<p class="title-font sm:text-2xl text-2xl mb-4 font-medium text-white text-center">Baju</p>
 <br>
 <div class="flex md:flex-row flex-col items-center max-w-6xl m-auto">
     <div class="max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-600 m-auto">
@@ -88,7 +127,7 @@
         <div class="flex items-center justify-between px-4 py-2 bg-gray-900">
             <h1 class="text-lg font-bold text-white">Rp. 25.000</h1>
             <a href="#">
-            <button class="px-2 py-2 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-blue-500 rounded hover:bg-blue-600 focus:bg-gray-400 focus:outline-none">Add to cart</button>
+            <button class="px-2 py-2 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-blue-500 rounded hover:bg-blue-600 focus:bg-gray-400 focus:outline-none">Detail</button>
             </a>
         </div>
     </div>
@@ -106,7 +145,7 @@
         <div class="flex items-center justify-between px-4 py-2 bg-gray-900">
             <h1 class="text-lg font-bold text-white">Rp. 25.000</h1>
             <a href="#">
-            <button class="px-2 py-2 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-blue-500 rounded hover:bg-blue-600 focus:bg-gray-400 focus:outline-none">Add to cart</button>
+            <button class="px-2 py-2 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-blue-500 rounded hover:bg-blue-600 focus:bg-gray-400 focus:outline-none">Detail</button>
             </a>
         </div>
     </div>
@@ -124,7 +163,7 @@
         <div class="flex items-center justify-between px-4 py-2 bg-gray-900">
             <h1 class="text-lg font-bold text-white">Rp. 25.000</h1>
             <a href="#">
-            <button class="px-2 py-2 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-blue-500 rounded hover:bg-blue-600 focus:bg-gray-400 focus:outline-none">Add to cart</button>
+            <button class="px-2 py-2 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-blue-500 rounded hover:bg-blue-600 focus:bg-gray-400 focus:outline-none">Detail</button>
             </a>
         </div>
     </div>
@@ -147,7 +186,7 @@
         <div class="flex items-center justify-between px-4 py-2 bg-gray-900">
             <h1 class="text-lg font-bold text-white">Rp. 25.000</h1>
             <a href="#">
-            <button class="px-2 py-2 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-blue-500 rounded hover:bg-blue-600 focus:bg-gray-400 focus:outline-none">Add to cart</button>
+            <button class="px-2 py-2 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-blue-500 rounded hover:bg-blue-600 focus:bg-gray-400 focus:outline-none">Detail</button>
             </a>
         </div>
     </div>
@@ -165,7 +204,7 @@
         <div class="flex items-center justify-between px-4 py-2 bg-gray-900">
             <h1 class="text-lg font-bold text-white">Rp. 25.000</h1>
             <a href="#">
-            <button class="px-2 py-2 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-blue-500 rounded hover:bg-blue-600 focus:bg-gray-400 focus:outline-none">Add to cart</button>
+            <button class="px-2 py-2 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-blue-500 rounded hover:bg-blue-600 focus:bg-gray-400 focus:outline-none">Detail</button>
             </a>
         </div>
     </div>
@@ -183,7 +222,7 @@
         <div class="flex items-center justify-between px-4 py-2 bg-gray-900">
             <h1 class="text-lg font-bold text-white">Rp. 25.000</h1>
             <a href="#">
-            <button class="px-2 py-2 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-blue-500 rounded hover:bg-blue-600 focus:bg-gray-400 focus:outline-none">Add to cart</button>
+            <button class="px-2 py-2 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-blue-500 rounded hover:bg-blue-600 focus:bg-gray-400 focus:outline-none">Detail</button>
             </a>
         </div>
     </div>
