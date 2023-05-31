@@ -1,0 +1,11 @@
+{
+    "name": "febri-rahman/sambak",
+    "description": "Sebuah website resto dan minuman",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "FebriRahman\\Sambak\\": "src/"
+        }
+    },
+    "require": {}
+}
