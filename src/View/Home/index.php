@@ -116,7 +116,7 @@
 <section class="text-gray-400 bg-gray-900 body-font">
   <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center max-w-6xl m-auto">
     <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Welcome Datang Di
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Selamat Datang Di
         <br class="hidden lg:inline-block">CV. Sekawan Abadi Lestari!
       </h1>
       <p class="mb-8 leading-relaxed text-justify">Kami senang dapat menyambut Anda di sini dan mengenalkan produk-produk unggulan kami. Kami berkomitmen untuk memberikan solusi terbaik bagi kebutuhan bisnis Anda dengan kualitas produk yang terjamin dan harga yang kompetitif. Terima kasih telah memilih CV. Sekawan Abadi Lestari sebagai pilihan Anda.</p>
