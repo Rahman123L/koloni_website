@@ -9,7 +9,6 @@
     <script src="//unpkg.com/alpinejs" defer=""></script>
     <title><?php echo $model['title']; ?></title>
 </head>
-
 <body>
     <!-- Navbar -->
     <nav x-data="{ isOpen: false }" class="relative bg-white shadow dark:bg-gray-800">
@@ -48,7 +47,7 @@
                             <!-- Dropdown menu -->
                             <div x-show="!isOpen" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-100" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90" class="absolute right-0 z-20 w-56 py-2 mt-2 overflow-hidden origin-top-right bg-white rounded-md shadow-xl dark:bg-gray-800">
 
-                                <a href="/product/categories" class="flex items-center p-3 text-sm text-gray-600 capitalize transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                                <a href="/product/categories?name=baju" class="flex items-center p-3 text-sm text-gray-600 capitalize transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
                                     <span class="mx-1">
                                         Baju
                                     </span>
