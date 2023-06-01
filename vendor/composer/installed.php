@@ -3,7 +3,7 @@
         'name' => 'febri-rahman/sambak',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '7693b995766ccf6e5c858dc5da15030cc7239bf9',
+        'reference' => '170630b8c4499ee8af558c6a4cd383ee6fd85adb',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'febri-rahman/sambak' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '7693b995766ccf6e5c858dc5da15030cc7239bf9',
+            'reference' => '170630b8c4499ee8af558c6a4cd383ee6fd85adb',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
