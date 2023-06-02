@@ -38,4 +38,11 @@ class HomeController
             "title" => "Information"
         ]);
     }
+
+    function gallery()
+    {
+        View::render('Home/gallery', [
+            "title" => "Gallery"
+        ]);
+    }
 }

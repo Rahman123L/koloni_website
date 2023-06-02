@@ -10,6 +10,7 @@ use FebriRahman\Sambak\Controller\AdminController;
 // Home Router Page
 Router::add('GET', '/', HomeController::class, 'index', []);
 Router::add('GET', '/home/contact', HomeController::class, 'contact', []);
+Router::add('GET', '/home/gallery', HomeController::class, 'gallery', []);
 Router::add('GET', '/home/information', HomeController::class, 'information', []);
 
 // Products Router Page
